@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   color: #fff;
 }
@@ -415,14 +415,14 @@ a {
   padding: 0.8rem;
   height: 10rem;
 }
-.ask-section .form-container .input-container input[type="submit"] {
+.ask-section .form-container .input-container input[type='submit'] {
   box-shadow: none;
   border-radius: 20px;
   background-color: #c5f5fa;
   color: #131414;
   font-weight: 400;
 }
-.ask-section .form-container .input-container input[type="submit"]:hover {
+.ask-section .form-container .input-container input[type='submit']:hover {
   box-shadow: 0 0 15px 5px rgba(197, 245, 250, 0.8);
 }
 
@@ -488,6 +488,33 @@ footer .copyright-text a {
 }
 .scroll-to-top.show {
   opacity: 1;
+}
+
+/* Social Media section */
+.social-section {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-section img {
+  width: 5rem;
+  height: 5rem;
+  filter: invert(100%) brightness(1000%);
+  transition: all 0.3s ease;
+}
+
+.social-section img:hover {
+  transform: scale(1.1);
 }
 
 /* Media query */
@@ -601,6 +628,15 @@ footer .copyright-text a {
   .faq-section .container .question-wrapper .question .text {
     font-size: 0.8rem;
   }
+  .social-section {
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .social-section img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .welcome {
@@ -619,5 +655,14 @@ footer .copyright-text a {
   }
   .mobile {
     padding: 0.1rem 0.2rem;
+  }
+  .social-section {
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+  }
+
+  .social-section img {
+    width: 2rem;
+    height: 2rem;
   }
 }
